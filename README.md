@@ -1,28 +1,28 @@
-== README
+# Consuming and Testing External APIs
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Consuming APIs
 
-Things you may want to cover:
+We'll be using a Rails app, but it certainly isn't required. In many cases, a RESTful API can be accessed just like any other website.
 
-* Ruby version
+```sh
+curl http://hipsterjesus.com/api
+```
 
-* System dependencies
+If we visit the API endpoint in our browser, we'll be able to see the JSON output directly. (**Pro Tip:** Get the [JSONView browser](https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc?hl=en) extension for Chrome)
 
-* Configuration
+Basically, we are just visiting a website using Ruby, and then doing stuff with the output. We can use any number of HTTP clients to GET (and POST) info from external websites. Today, we'll be using [HTTParty](https://github.com/jnunemaker/httparty).
 
-* Database creation
+HTTParty is straightforward to use right away.
 
-* Database initialization
+From the app, run `rails c`, which loads our entire dev environment, including the `HTTParty` gem.
 
-* How to run the test suite
+`HTTParty.get("http://hipsterjesus.com/api")`
 
-* Services (job queues, cache servers, search engines, etc.)
+There are more features of HTTParty that we'll probably use:
+- Constructing URIs dynamically
+- Using ENV / tokens
+- Doing stuff with the response
 
-* Deployment instructions
+### Testing APIs
 
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Typically, we will make the actual external API calls within a Ruby object

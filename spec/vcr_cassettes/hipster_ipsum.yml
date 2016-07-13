@@ -1,0 +1,74 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://hipsterjesus.com/api
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 12 Jul 2016 17:35:39 GMT
+      Server:
+      - Apache
+      X-Powered-By:
+      - PHP/5.4.4
+      Set-Cookie:
+      - hipsterjesus=qj2m14mtp5jemssbuj4o25mh44; path=/
+      Expires:
+      - Thu, 19 Nov 1981 08:52:00 GMT
+      Cache-Control:
+      - no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+      Pragma:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Length:
+      - '2337'
+      Content-Type:
+      - application/json
+    body:
+      encoding: UTF-8
+      string: '{"text":"<p>Listicle VHS meggings placeat occaecat.  Irure  tofu 90''s
+        tousled sartorial wayfarers, crucifix seitan shoreditch vegan ullamco fugiat.  Irony
+        ut brunch, DIY pork belly artisan magna ennui vinyl etsy.  Commodo ea roof
+        party nostrud aesthetic, chillwave sed consequat whatever schlitz minim.  Duis  kogi
+        neutra, retro cronut accusamus selvage single-origin coffee listicle plaid
+        esse  non  flannel seitan.  Sartorial consequat williamsburg kombucha, ex
+        four dollar toast mumblecore lo-fi keytar.  Tempor craft beer laborum, iPhone
+        semiotics aesthetic fixie ut pinterest viral fap neutra sunt.<\/p>\n<p>Voluptate  drinking
+        vinegar pabst cillum.  Brooklyn chillwave tousled thundercats swag ex readymade,
+        plaid truffaut ugh.  Anim  food truck pop-up portland, officia  celiac consequat
+        drinking vinegar do marfa pinterest.  Leggings keffiyeh venmo, quinoa chicharrones
+        neutra asymmetrical ugh seitan voluptate  qui  hashtag adipisicing organic.  Scenester
+        DIY biodiesel master cleanse heirloom blog roof party.  Tousled tempor hammock
+        cardigan, thundercats cillum  aute  polaroid.  Brunch viral put a bird on
+        it, stumptown locavore seitan meggings.<\/p>\n<p>Organic occupy distillery,
+        dolore butcher heirloom consequat sustainable.  Keytar everyday carry plaid,
+        deserunt  commodo dolore banh mi health goth narwhal elit twee.  Letterpress
+        synth chillwave, authentic pariatur kale chips hella.  Etsy affogato butcher,
+        retro VHS marfa magna.  Sed hoodie cornhole organic normcore, everyday carry
+        beard taxidermy craft beer butcher fashion axe.  Gochujang do sapiente, retro
+        mollit  tattooed bespoke sed.  Aesthetic vegan eu, ennui farm-to-table hashtag
+        tacos wolf marfa dreamcatcher ethical.<\/p>\n<p>Banh mi selvage excepteur,
+        asymmetrical lumbersexual forage labore pinterest sed deserunt  freegan cardigan
+        authentic.  Ex church-key eiusmod lumbersexual, XOXO helvetica irony photo
+        booth +1 vero keytar delectus.  Meggings delectus brooklyn quinoa, pork belly
+        commodo chartreuse literally banjo accusamus.  Irony church-key vegan, nostrud
+        deep v polaroid master cleanse meditation.  Excepteur  biodiesel selfies vero
+        umami VHS, proident listicle four dollar toast fanny pack actually cillum.  Quinoa
+        taxidermy 8-bit qui  pour-over street art.  Assumenda bespoke sapiente tilde.<\/p>","params":{"paras":4,"type":"hipster-latin"}}'
+    http_version: 
+  recorded_at: Tue, 12 Jul 2016 17:35:39 GMT
+recorded_with: VCR 3.0.3
