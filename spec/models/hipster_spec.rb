@@ -1,23 +1,17 @@
 require 'rails_helper'
 
 describe Hipster do
-  describe "#fetch_data", vcr: { cassette_name: "hipster_ipsum" } do
-    it "returns HTTParty::Response with text" do
-      hipster_data = HipsterIpsum.new.fetch_data
-      expect(hipster_data.class).to eq HTTParty::Response
+  let(:hipster) { Hipster.new }
 
-      expect(hipster_data["text"]).to be_a String
-      expect(hipster_data["text"]).to include "Listicle VHS meggings placeat occaecat"
+  describe "#text" do
+    it "returns hipster text" do
+      expect(hipster.text).to include "blarg"
     end
   end
 
-  describe "#fetch_data" do
-    it "returns HTTParty::Response with text" do
-      hipster_data = HipsterIpsum.new.fetch_data
-      expect(hipster_data.class).to eq HTTParty::Response
-
-      expect(hipster_data["text"]).to be_a String
-      expect(hipster_data["text"]).to include "Listicle VHS meggings placeat occaecat"
+  describe "#type" do
+    it "returns hipster type" do
+      expect(hipster.type).to eq "hipster-greek"
     end
   end
 end

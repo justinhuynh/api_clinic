@@ -12,7 +12,7 @@ Dir[Rails.root.join("spec/support/**/*.rb")].each { |f| require f }
 Capybara.javascript_driver = :webkit
 ActiveRecord::Migration.maintain_test_schema!
 
-HipsterIpsum = HipsterIpsumFake
+Hipster.api = HipsterIpsumFake
 
 RSpec.configure do |config|
   config.include FactoryGirl::Syntax::Methods

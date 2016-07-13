@@ -7,7 +7,9 @@ describe StackExchange do
     it "should return a list of questions" do
       questions = stack_exchange.questions
 
+      expect(questions.class).to eq HTTParty::Response
       expect(questions.code).to eq 200
+      
       expect(questions).to_not be nil
       expect(questions["items"]).to be_an Array
       expect(questions["items"].count).to eq 30
@@ -17,6 +19,9 @@ describe StackExchange do
   describe "#users", vcr: { cassette_name: "stack_exchange_users" } do
     it "should return a list of users" do
       users = stack_exchange.users
+
+      expect(users.class).to eq HTTParty::Response
+      expect(users.code).to eq 200
 
       expect(users).to_not be nil
       expect(users["items"]).to be_an Array

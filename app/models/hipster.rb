@@ -1,4 +1,7 @@
 class Hipster
+  @@api = HipsterIpsum
+  cattr_accessor :api
+
   attr_reader :text, :type
 
   def initialize
@@ -17,6 +20,6 @@ class Hipster
   private
 
   def get_hipster_data
-    @hipster_data ||= HipsterIpsum.new.fetch_data
+    @hipster_data ||= api.new.fetch_data
   end
 end
