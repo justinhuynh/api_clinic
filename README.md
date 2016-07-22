@@ -246,6 +246,12 @@ RSpec.configure do |config|
 end
 ```
 
+### Troubleshooting
+
+If VCR does not seem to be making cassettes or catching HTTP requests, you might need to explicitly require `webmock`. Add the following line to your `rails_helper.rb` file:
+
+`require 'webmock/rspec'`
+
 ### Additional Resources
 
 - [Faking Third-Party APIs](https://github.com/justinhuynh/weekly-iteration-faking-apis)
